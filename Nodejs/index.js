@@ -21,5 +21,6 @@ const server = http.createServer(async (req, res) => {
 
 
 server.listen(PORT, () => {
+    console.log(process.cwd())
     console.log(`server started on port: ${PORT}`);
 });
