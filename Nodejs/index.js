@@ -2,13 +2,13 @@ const http = require("http");
 const PORT = process.env.PORT || 5000;
 
 const server = http.createServer(async (req, res) => {
-    //set the request route
+    // set the request route
     if (req.url === "/api" && req.method === "GET") {
-        //response headers
+        // response headers
         res.writeHead(200, { "Content-Type": "application/json" });
-        //set the response
+        // set the response
         res.write("Hi there, This is a Vanilla Node.js API");
-        //end the response
+        // end the response
         res.end();
     }
 
